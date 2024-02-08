@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>mostersstore</title>
+         <link href="css/reset.css" rel="stylesheet">
+         <link href="css/commom.css" rel="stylesheet">
+         <link href="css/main.css" rel="stylesheet">
+
+         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+         <script>
+            $(function () {
+               $('button:nth-of-type(1)').click(function () {
+                  $("#box1").fadeIn().css("display","flex");
+                  $("#box2").hide();
+                  $("#box3").hide();
+               });
+      
+      
+               $('button:nth-of-type(2)').click(function () {
+                  $("#box2").fadeIn().css("display","flex");
+                  $("#box3").hide();
+                  $("#box1").hide();
+               });
+      
+      
+               $('button:nth-of-type(3)').click(function () {
+                  $("#box3").fadeIn().css("display","flex");
+                  $("#box1").hide();
+                  $("#box2").hide();
+               });
+   
+            });
+      
+         </script>
+         <script>
+            $(document).ready(function(){
+      $('#b').click(function(){
+        $('#myNav').css('width','100%');
+      });
+
+      $('.closebtn').click(function(){
+        $('#myNav').css('width','0');
+      });
+
+      $
+   
+    });
+         </script>
+</head>
+
+<body>
+         <header>
+                  <div id="box">
+                           <div id="logo">
+                              <a href="#"><img src="img/logo/mos.webp" alt="mon"></a>
+                              <div class="login">
+                                 <a href="#">로그인</a>
+                                 /
+                                 <a href="#">회원가입</a>
+                              </div>
+                           </div> <img src="img/i.png" id="b" alt="ico">
+                  </div>
+                  <nav>
+                           <ul>
+                                    <li><a href="#">ALL</a></li>
+                                    <li><a href="#">new</a></li>
+                                    <li><a href="#">Best</a></li>
+                                    <li><a href="#">유니폼</a></li>
+                                    <li><a href="#">의류</a></li>
+                                    <li><a href="#">모자</a></li>
+                                    <li><a href="#">잡화</a></li>
+                                    <li><a href="#">야구용품</a></li>
+                                    <li><a href="#">응원용품</a></li>
+                                    <li><a href="#">[최강야구 X 켈리]</a></li>
+                           </ul>
+                           
+                  </nav>
+
+                  <div id="myNav" class="overlay">
+
+                     <a href="javascript:void(0)" class="closebtn">&times;</a>
+
+                     <div class="overlay-content">
+                        <a href="#">ALL</a>
+                        <a href="#">new</a>
+                        <a href="#">Best</a>
+                        <a href="#">유니폼</a>
+                        <a href="#">의류</a>
+                        <a href="#">모자</a>
+                        <a href="#">잡화</a>
+                        <a href="#">야구용품</a>
+                        <a href="#">응원용품</a>
+                        <a href="#">[최강야구 X 켈리]</a>
+                     </div>
+                  </div>
+         </header>
+         <div id="sliderwrap">
+                  <ul class="slide">
+                           <li><img src="img/slider/banner1.2.jpg"
+                                             alt="dliderimage"></li>
+                           <li><img src="img/slider/Frame2.jpg"
+                                             alt="dliderimage"></li>
+                           <li><img src="img/slider/Frame3.jpg"
+                                             alt="dliderimage"></li>
+                           <li><img src="img/slider/baner1.1.jpg"
+                                                      alt="dliderimage"></li>
+                           <li><img src="img/slider/KEYRING.jpg"
+                                                               alt="dliderimage"></li>
+                  </ul>
+                  
+                  <span class="prev">&lt;</span>
+                  <span class="next">&gt;</span>
+
+         </div>
+         <script>
+                  function prev() {
+                           $('.slide li:last').prependTo('.slide');
+                           $('.slide').css('margin-left', -1000);
+                           $('.slide').stop().animate({ marginLeft: 0 }, 800);
+                  }
+                  function next() {
+                           $('.slide').stop().animate({ marginLeft: -1000 }, 800, function () {
+                                    $('.slide li:first').appendTo('.slide');
+                                    $('.slide').css({ marginLeft: 0 });
+                           });
+                  }
+
+                  setInterval(next, 3000);
+
+                  $('.prev').click(function () {
+
+                           prev();
+
+                  });
+
+
+
+                  $('.next').click(function () {
+
+                           next();
+
+                  });
+         </script>
+         <section>
+         
+            <div id="new">
+         
+               <h3>NEW</h3>
+               <p><b>몬스터즈의 새로운 상품을 소개합니다.</b></p>
+         
+         
+                <div id="newb">
+               <div class="new1">
+         
+                  <a href="#"><img src="img/new/BiuPv_105352_1.jpg" alt="Trulli"></a>
+         
+                  <h5>최강야구 블루 퀼팅점퍼</h5>
+         
+                  <p>99,000원</p>
+         
+                  <div class="red">new</div>
+         
+               </div>
+         
+         
+         
+               <div class="new1">
+         
+                  <a href="#"><img src="img/new/SdeMM_105341_1.jpg" alt="Trulli"></a>
+         
+                  <h5>최강야구 꿀이 미니 크로스백</h5>
+         
+                  <p>18,000원</p>
+         
+                  <div class="red">new</div>
+         
+               </div>
+         
+         
+         
+               <div class="new1">
+         
+                  <a href="#"><img src="img/new/jgulW_105343_1.jpg" alt="Trulli"></a>
+         
+                  <h5>최강야구 소리 아크릴톡</h5>
+         
+                  <p>9,900원</p>
+         
+                  <div class="red">new</div>
+         
+               </div>
+            </div> 
+         
+         
+            </div>
+         
+         
+         
+            <div id="bar1">
+               <img src="img/logo/monsters.webp" alt="win">
+            </div>
+         
+         
+
+
+            <div id="best">
+               <div id="button">
+         
+               <h3>best item</h3>
+
+               <button type="button"><b>일간</b></button>
+               ㅣ
+               <button type="button"><b>주간</b></button>
+               ㅣ
+               <button type="button"><b>월간</b></button>
+               </div>
+         
+         
+               <div id="box1">
+
+               <div class="box">
+         
+                  <a href="#"><img src="img/best/ou5Se_105164_1.jpg" alt="kir"></a>
+         
+                  <h5>최강야구 페이스 키링</h5>
+         
+                  <p>13,000원</p>
+         
+                  <div class="red">best</div>
+         
+               </div>
+         
+         
+         
+               <div class="box">
+         
+                  <a href="#"><img src="img/best/X5T4i_105130_1.jpg" alt="kir"></a>
+         
+                  <h5>최강야구 레플리카 블랙 유니폼</h5>
+         
+                  <p>69,000원</p>
+         
+                  <div class="red">best</div>
+         
+               </div>
+         
+         
+         
+               <div class="box">
+         
+                  <a href="#"><img src="img/best/qzLTB_105116_1.jpg" alt="kir"></a>
+         
+                  <h5>최강야구 골드마킹 키트</h5>
+         
+                  <p>25,000원</p>
+         
+                  <div class="red">best</div>
+         
+               </div>
+              
+                </div>
+
+
+                <div id="box2">
+                  <div class="box">
+         
+                     <a href="#"><img src="img/best/ou5Se_105164_1.jpg" alt="kir"></a>
+            
+                     <h5>최강야구 페이스 키링</h5>
+            
+                     <p>13,000원</p>
+            
+                     <div class="red">best</div>
+            
+                  </div>
+            
+            
+            
+                  <div class="box">
+            
+                     <a href="#"><img src="img/best/chk7d_104829_1.jpg" alt="kir"></a>
+            
+                     <h5>최강야구 타포린백</h5>
+            
+                     <p>4,000원</p>
+            
+                     <div class="red">best</div>
+            
+                  </div>
+            
+            
+            
+                  <div class="box">
+            
+                     <a href="#"><img src="img/best/7EN5h_105338_1.jpg" alt="kir"></a>
+            
+                     <h5>최강야구 블랙 퀼팅점퍼</h5>
+            
+                     <p>99,000원</p>
+            
+                     <div class="red">best</div>
+            
+                  </div>
+                 
+                   </div>
+
+
+
+                   <div id="box3">
+                     <div class="box">
+            
+                        <a href="#"><img src="img/best/7EN5h_105338_1.jpg" alt="kir"></a>
+               
+                        <h5>최강야구 블랙 퀼팅점퍼</h5>
+               
+                        <p>99,000원</p>
+               
+                        <div class="red">best</div>
+               
+                     </div>
+               
+               
+               
+                     <div class="box">
+            
+                        <a href="#"><img src="img/best/chk7d_104829_1.jpg" alt="kir"></a>
+               
+                        <h5>최강야구 타포린백</h5>
+               
+                        <p>4,000원</p>
+               
+                        <div class="red">best</div>
+               
+                     </div>
+               
+               
+               
+                     <div class="box">
+         
+                        <a href="#"><img src="img/best/qzLTB_105116_1.jpg" alt="kir"></a>
+               
+                        <h5>최강야구 골드마킹 키트</h5>
+               
+                        <p>25,000원</p>
+               
+                        <div class="red">best</div>
+               
+                     </div>
+                    
+                      </div>
+         
+            </div>
+
+                  <div id="bar2">
+                           <a href="#"><img src="img/kelly/kelly5.jpg" alt="kelly"></a>
+                  </div>
+
+                  
+                  <div id="review">
+                     <h1>riview</h1>
+                      <div id="view">
+                        <div class="vvi">
+                           <img src="img/review/9S8Sk_104833_1.jpg" alt="vv">
+                           <p>요즘 여행갈 때 필수에요 완전 꿀잠템</p><br>
+                           <p>2023.12.14</p>
+                        </div>
+                        <div class="vvi">
+                           <img src="img/review/p25Y1_104847_1.jpg" alt="vv">
+                           <p>배송이 빠르네요 잘쓸게요</p><br>
+                           <p>2024.01.28</p>
+                        </div>
+                        <div class="vvi">
+                           <img src="img/review/rk1r7_104336_1.jpg" alt="vv">
+                           <p>너무 이쁜데 가격은 안 이뻐요ㅠ</p><br>
+                           <p>2024.02.01</p>
+                        </div>
+                      </div>
+                  </div>
+         </section>
+
+              <aside>
+               <ul>
+               <li><a href="#"></a></li>
+               <li><a href="#"></a></li>
+               </ul>
+              </aside>
+
+         <footer>
+           
+                  <div id="logo2">
+                         <img src="img/logo/mos.webp" alt="logo">
+                  </div>
+                  <div id="sns">
+                  <a href="https://youtube.com/playlist?list=PL5qRfk4DowRCsf5X-Yc2fwcPTRek5xgyv&si=NRh3cpM7JGVSf_rW"><img src="img/sns/unnamed.jpg" alt="youtube"></a>
+                  <a href="https://tv.jtbc.co.kr/ckmonsters"><img src="img/sns/pp4Ih39j_400x400.jpg" alt="jtbc"></a>
+                  <a href="https://www.instagram.com/jtbc.insta/"><img src="img/sns/unnamed.webp" alt="insta"></a>
+                  </div>
+
+                  <div id="text">
+                  <h1>최강몬스터즈 공식 온라인 스토어</h1>
+                  <br>
+                  <p>상호명 :  주식회사 OOOO / 대표자 : OOO  / 고객센터 : 1234-5678 <br> 
+                           사업자등록번호 :  12-345-678910 / 사업장 소재지  : 서울특별시 마포구 상암산로 38 / 통신판매업번호2024-서울마포구-1111 <br>
+                           e-mail : OOmosters@gmail.com <br>
+                           <br><br>
+                           copyright 2024. Monsters Inc.all right reserved.</p>
+                  </div>
+         </footer>
+</body>
+
+</html>
