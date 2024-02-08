@@ -7,48 +7,10 @@
          <title>mostersstore</title>
          <link href="css/reset.css" rel="stylesheet">
          <link href="css/commom.css" rel="stylesheet">
-         <link href="css/main.css" rel="stylesheet">
+         <link href="css/goodsmain.css" rel="stylesheet">
 
          <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-         <script>
-            $(function () {
-               $('button:nth-of-type(1)').click(function () {
-                  $("#box1").fadeIn().css("display","flex");
-                  $("#box2").hide();
-                  $("#box3").hide();
-               });
-      
-      
-               $('button:nth-of-type(2)').click(function () {
-                  $("#box2").fadeIn().css("display","flex");
-                  $("#box3").hide();
-                  $("#box1").hide();
-               });
-      
-      
-               $('button:nth-of-type(3)').click(function () {
-                  $("#box3").fadeIn().css("display","flex");
-                  $("#box1").hide();
-                  $("#box2").hide();
-               });
-   
-            });
-      
-         </script>
-         <script>
-            $(document).ready(function(){
-      $('#b').click(function(){
-        $('#myNav').css('width','100%');
-      });
-
-      $('.closebtn').click(function(){
-        $('#myNav').css('width','0');
-      });
-
-      $
-   
-    });
-         </script>
+         
 </head>
 
 <body>
@@ -115,35 +77,7 @@
                   <span class="next">&gt;</span>
 
          </div>
-         <script>
-                  function prev() {
-                           $('.slide li:last').prependTo('.slide');
-                           $('.slide').css('margin-left', -1000);
-                           $('.slide').stop().animate({ marginLeft: 0 }, 800);
-                  }
-                  function next() {
-                           $('.slide').stop().animate({ marginLeft: -1000 }, 800, function () {
-                                    $('.slide li:first').appendTo('.slide');
-                                    $('.slide').css({ marginLeft: 0 });
-                           });
-                  }
-
-                  setInterval(next, 3000);
-
-                  $('.prev').click(function () {
-
-                           prev();
-
-                  });
-
-
-
-                  $('.next').click(function () {
-
-                           next();
-
-                  });
-         </script>
+         
          <section>
          
             <div id="new">
@@ -155,8 +89,8 @@
                 <div id="newb">
                <div class="new1">
          
-                  <a href="#"><img src="img/new/BiuPv_105352_1.jpg" alt="Trulli"></a>
-         
+                  <a href="#"><img src="img/new/BiuPv_105352_1.jpg" alt="Trulli" id="pic1"></a>
+
                   <h5>최강야구 블루 퀼팅점퍼</h5>
          
                   <p>99,000원</p>
@@ -169,7 +103,7 @@
          
                <div class="new1">
          
-                  <a href="#"><img src="img/new/SdeMM_105341_1.jpg" alt="Trulli"></a>
+                  <a href="#"><img src="img/new/SdeMM_105341_1.jpg" alt="Trulli" id="pic2"></a>
          
                   <h5>최강야구 꿀이 미니 크로스백</h5>
          
@@ -183,9 +117,9 @@
          
                <div class="new1">
          
-                  <a href="#"><img src="img/new/jgulW_105343_1.jpg" alt="Trulli"></a>
+                  <a href="#"><img src="img/new/jgulW_105343_1.jpg" alt="Trulli" id="pic3"></a>
          
-                  <h5>최강야구 소리 아크릴톡</h5>
+                  <h5>최강야구 아크릴톡</h5>
          
                   <p>9,900원</p>
          
@@ -360,22 +294,26 @@
 
                   
                   <div id="review">
+
                      <h1>riview</h1>
+
                       <div id="view">
+
                         <div class="vvi">
+
                            <img src="img/review/9S8Sk_104833_1.jpg" alt="vv">
-                           <p>요즘 여행갈 때 필수에요 완전 꿀잠템</p><br>
-                           <p>2023.12.14</p>
+                           <p>"요즘 여행갈 때 필수에요 완전 꿀잠템"</p><br>
+                           <p>2023.12.14/ny****</p>
                         </div>
                         <div class="vvi">
                            <img src="img/review/p25Y1_104847_1.jpg" alt="vv">
-                           <p>배송이 빠르네요 잘쓸게요</p><br>
-                           <p>2024.01.28</p>
+                           <p>"배송이 빠르네요 잘쓸게요"</p><br>
+                           <p>2024.01.28/GH******</p>
                         </div>
                         <div class="vvi">
                            <img src="img/review/rk1r7_104336_1.jpg" alt="vv">
-                           <p>너무 이쁜데 가격은 안 이뻐요ㅠ</p><br>
-                           <p>2024.02.01</p>
+                           <p>"너무 이쁜데 가격은 안 이뻐요ㅠ"</p><br>
+                           <p>2024.02.01/04g*****</p>
                         </div>
                       </div>
                   </div>
@@ -409,6 +347,7 @@
                            copyright 2024. Monsters Inc.all right reserved.</p>
                   </div>
          </footer>
+         <script src="goodssmain.js"></script>
 </body>
 
 </html>
