@@ -36,11 +36,11 @@ $(function () {
 
        function prev() {
          $('.slide li:last').prependTo('.slide');
-         $('.slide').css('margin-left', -1000);
+         $('.slide').css('margin-left', -1440);
          $('.slide').stop().animate({ marginLeft: 0 }, 800);
 }
 function next() {
-         $('.slide').stop().animate({ marginLeft: -1000 }, 800, function () {
+         $('.slide').stop().animate({ marginLeft: -1440 }, 800, function () {
                   $('.slide li:first').appendTo('.slide');
                   $('.slide').css({ marginLeft: 0 });
          });
@@ -61,6 +61,42 @@ $('.next').click(function () {
          next();
 
 });
+
+if(window.matchMedia("(max-width:599px").matches){
+   function prev() {
+      $('.slide li:last').prependTo('.slide');
+      $('.slide').css('margin-left', -500);
+      $('.slide').stop().animate({ marginLeft: 0 }, 800);
+}
+function next() {
+      $('.slide').stop().animate({ marginLeft: -500 }, 800, function () {
+               $('.slide li:first').appendTo('.slide');
+               $('.slide').css({ marginLeft: 0 });
+      });
+}
+
+setInterval(next, 3000);
+
+$('.prev').click(function () {
+
+      prev();
+
+});
+
+
+
+$('.next').click(function () {
+
+      next();
+
+});
+
+} else{};
+
+
+
+
+
 
 
 $("#pic1").hover(
