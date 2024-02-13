@@ -10,23 +10,23 @@
                 }
               
                 .slide {
-                  width: 2500px;
+                  width: 500%;
                 }
+
+                .slide ul{overflow: hidden;}
               
                 .slide li {
-                  width: 500px;
+                  width: 20%;
                   height: auto;
                   float: left;
                 }
               
                 .slide li img {
-                  -o-object-fit: cover;
+                  
                   object-fit: cover;
                   width: 100%;
                   height: 100%;
-                  -webkit-user-select: none;
-                  -moz-user-select: none;
-                  -ms-user-select: none;
+                 
                   user-select: none;
                 }
               
@@ -352,33 +352,32 @@
 
 }
 
-@media(min-width:600px){
+@media(min-width:600px) and (max-width:1456px){
          #sliderwrap {
                   width: 100%;
-                  height: 711px;
+                  height: auto;
                   margin: 5px auto;
                   position: relative;
                   overflow: hidden;
                 }
                 
                 .slide {
-                  width: 7200px;
+                  width: 500%;
                 }
+
+                .slide ul{overflow: hidden;}
                 
                 .slide li {
-                  max-width: 100%;
+                  width: 20%;
                   height: auto;
                   float: left;
                 }
                 
                 .slide li img {
-                  -o-object-fit: cover;
+                 
                   object-fit: cover;
                   width: 100%;
                   height: 100%;
-                  -webkit-user-select: none;
-                  -moz-user-select: none;
-                  -ms-user-select: none;
                   user-select: none;
                 }
                 
@@ -793,7 +792,7 @@
 
 }
 
-@media(min-width:1100px){
+@media(min-width:1457px){
          #sliderwrap {
                   width: 1440px;
                   height: 711px;
@@ -813,13 +812,9 @@
                 }
                 
                 .slide li img {
-                  -o-object-fit: cover;
                   object-fit: cover;
                   width: 100%;
                   height: 100%;
-                  -webkit-user-select: none;
-                  -moz-user-select: none;
-                  -ms-user-select: none;
                   user-select: none;
                 }
                 
