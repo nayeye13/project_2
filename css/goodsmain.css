@@ -878,6 +878,7 @@
                   overflow-y: auto;
                   margin: 0 auto;
                   padding: 0;
+              
                 }
                 
                 
@@ -941,7 +942,8 @@
 
                
                 #newb p{font-size: 17px;
-                padding-bottom: 10px;}
+                padding-bottom: 10px;
+              text-align: center;}
                 
               
                 #newb .new1 {
@@ -1017,7 +1019,7 @@
                   height: auto;
                   border: 1px solid #ddd;
                   padding: 10px;
-                  margin: 1% auto;
+                  margin: 1%;
                 }
                 
                 #box1 .box img {
@@ -1037,7 +1039,9 @@
                 #box1 .box p {
                   color: #666;
                   font-size: 14px;
+                  text-align: center;
                 }
+
                 
                 #box1 .red {
                   background-color: royalblue;
@@ -1076,6 +1080,7 @@
                 #box2 .box p {
                   color: #666;
                   font-size: 14px;
+                  text-align: center;
                 }
                 
                 #box2 .red {
@@ -1114,6 +1119,7 @@
                 #box3 .box p {
                   color: #666;
                   font-size: 14px;
+                  text-align: center;
                 }
                 
                 #box3 .red {

@@ -121,7 +121,3 @@ $("#pic3").hover(
 		$(this).attr("src","img/new/jgulW_105343_1.jpg");
 	}
 );
-
-function changeToCursor1(){
-   document.body.style.cursor="html('&#9918;'),html('&#9918;'),default";
-}
