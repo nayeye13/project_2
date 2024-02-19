@@ -7,7 +7,7 @@
                   margin: 0 auto;
          }
 
-         #all>h1{margin-left: 20px; width: 45px;
+         #allwrap>h1{margin-left: 20px; width: 45px;
          border-bottom: 2px solid black;clear: both;}
 
          button{ width: 23%;
