@@ -34,6 +34,16 @@ $(function () {
       
        });
 
+       $(function(){
+         $(window).scroll(function(){
+            var ws=$(this).scrollTop();
+         
+         if(ws>100){
+            $('#newb').css("transform","translateY(0px)").css("opacity","1");
+         }
+      });
+       });
+
 //        function prev() {
 //          $('.slide li:last').prependTo('.slide');
 //          $('.slide').css('margin-left', -1440);

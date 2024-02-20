@@ -132,6 +132,8 @@
                 #newb {
                   display: flex;
                   margin: 0 auto;
+                  transform: translateY(-50px);
+                  transition: all 3s; opacity: 0;
                   
                 }
               
@@ -484,6 +486,8 @@
                 #newb {
                   display: flex;
                   margin: 0 auto;
+                  transform: translateY(-50px);
+                  transition: all 3s; opacity: 0;
                 }
                 
                 #newb .new1 img {
@@ -928,6 +932,8 @@
                 #newb {
                   display: flex;
                   margin: 0 auto;
+                  transform: translateY(-50px);
+                  transition: all 3s; opacity: 0;
                 }
                 
                 #newb .new1 img {
